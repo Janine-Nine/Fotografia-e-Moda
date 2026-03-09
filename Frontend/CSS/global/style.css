@@ -1,0 +1,192 @@
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Navbar */
+.navbar {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.navbar-brand {
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.navbar-slogan {
+    height: 36px;
+    margin-left: 12px;
+}
+
+/* Slogan */
+.slogan {
+    font-size: 1rem;
+    background-image: url('marca slogan.png');
+    text-align: center;
+    margin-top: 1px;
+}
+
+/* Banner */
+.banner {
+    background: #fff;
+    border-radius: 24px;
+    box-shadow: 0 4px 32px rgba(248, 51, 172, 0.08);
+    margin: 2rem auto 3rem auto;
+    padding: 3rem 2rem;
+    max-width: 1100px;
+}
+.banner h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #f833ac;
+    margin-bottom: 1rem;
+}
+.banner p {
+    font-size: 1.2rem;
+    color: #444;
+}
+.banner .btn-primary {
+    background: #f833ac;
+    border: none;
+    font-weight: 600;
+    padding: 0.7rem 2rem;
+    border-radius: 30px;
+    transition: background 0.2s;
+}
+.banner .btn-primary:hover {
+    background: #c0267a;
+}
+.banner-img {
+    max-width: 420px;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(248, 51, 172, 0.15);
+}
+
+/* Portfólio */
+#portfolio {
+    background-color: #f8f9;
+    padding: 50px 0;
+}
+.portfolio-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.portfolio-item {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease-in-out;
+}
+.portfolio-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease-in-out;
+}
+.portfolio-item:hover {
+    transform: scale(1.05);
+}
+.portfolio-item:hover img {
+    transform: scale(1.2);
+}
+.portfolio-info {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+    text-align: center;
+}
+.portfolio-item:hover .portfolio-info {
+    opacity: 1;
+}
+
+/* Títulos e textos */
+.h1 {
+    font-size: 4rem;
+    background-color: purple;
+}
+.paragraph {
+    font-size: 2.5rem;
+    background-color: black;
+}
+
+/* Consolidando estilos globais */
+body {
+    background: #f833ac; /* Fundo rosa */
+    font-family: 'Poppins', sans-serif; /* Fonte moderna */
+    color: #222; /* Texto escuro */
+}
+
+h1.section-title {
+    color: #f833ac;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.footer {
+    background: #222;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+/* Carrossel */
+.carousel-inner img {
+    border-radius: 18px;
+    box-shadow: 0 2px 16px rgba(248, 51, 172, 0.10);
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #f833ac;
+    border-radius: 50%;
+}
+
+/* Botão personalizado */
+.btn-custom {
+    border: 2px solid #4b0082; /* Borda roxo escuro */
+    background-color: #fff; /* Fundo branco */
+    color: #f833ac; /* Letras rosa */
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: all 0.3s ease;
+}
+
+.btn-custom:hover {
+    background-color: #f833ac; /* Fundo rosa ao passar o mouse */
+    color: #fff; /* Letras brancas ao passar o mouse */
+}
+
+/* Responsividade */
+@media (max-width: 767px) {
+    .banner {
+        padding: 2rem 1rem;
+    }
+    .banner h1 {
+        font-size: 2rem;
+    }
+    .banner-img {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+}

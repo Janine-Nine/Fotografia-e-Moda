@@ -1,0 +1,19 @@
+GitHub
+ ↓
+Docker Build
+ ↓
+AWS ECR
+ ↓
+AWS EC2 ou ECS
+ ↓
+Rodar container
+
+
+
+Admin Login
+↓
+JWT Token
+↓
+Painel
+↓
+Gerenciar Portfólio
